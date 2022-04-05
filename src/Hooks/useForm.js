@@ -10,6 +10,10 @@ const types = {
     regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
     message:
       'A senha precisa: Conter pelo menos 8 caracteres, Conter pelo menos 1 número, Conter pelo menos 1 caractere minúsculo, Conter pelo menos 1 caractere maiúsculo'
+  },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize apenas números.'
   }
 };
 
