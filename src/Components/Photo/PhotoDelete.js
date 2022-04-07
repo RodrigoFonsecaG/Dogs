@@ -32,3 +32,4 @@ const PhotoDelete = ({ id }) => {
 };
 
 export default PhotoDelete;
+
