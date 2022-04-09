@@ -11,11 +11,12 @@ const FeedPhotos = ({ setModalPhoto, user, page, setInfinite }) => {
 
   React.useEffect(() => {
     async function fetchPhotos() {
-      const total = 3;
+      const total = 6;
 
       const { url, options } = PHOTOS_GET({ page, total, user });
       const { response, json } = await request(url, options);
 
+      // Se o json vier com menos de 3 itens que é o nosso total, significa que é a ultima página, então definimos o estado infinite para false
       if (response && response.ok && json.length < total) {
         setInfinite(false);
       }
