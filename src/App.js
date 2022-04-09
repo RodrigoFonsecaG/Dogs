@@ -12,6 +12,7 @@ import Login from './Components/Login/Login';
 import {UserStorage} from './UserContext'
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
 import Photo from './Components/Photo/Photo';
+import UserProfile from './Components/User/UserProfile';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="conta/*" element={<ProtectedRoute> <User />
             </ProtectedRoute>} />
             <Route path="foto/:id" element={<Photo/>} />
+            <Route path="perfil/:user" element={<UserProfile/>} />
           </Routes>
           <Footer />
         </UserStorage>
