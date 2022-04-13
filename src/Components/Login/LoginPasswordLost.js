@@ -30,7 +30,7 @@ const LoginPasswordLost = () => {
 
   // Se tivermos o data que é o useFetch e vai dizer se o email foi enviado ou nao renderizamos um paragrafo com essa mensagem se não renderizamos o formulario.
   return (
-    <section>
+    <section className="animeLeft">
       <Head title="Perdeu a senha" />
 
       <h1 className="title">Perdeu a senha?</h1>
